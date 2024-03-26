@@ -1,8 +1,11 @@
 //Variables
 var numeroMaximoDeIntentos = 10;
+
+
 var numeroSecreto = parseInt(Math.random()*1000+1);
-alert(numeroSecreto);
 var contador = 1;
+
+alert(`Tienes ${numeroMaximoDeIntentos} intentos para adivinar el numero secreto \n¡Suerte!`);
 
 while(numeroSecreto != numeroDigitado){
 
@@ -18,7 +21,7 @@ while(numeroSecreto != numeroDigitado){
   
   contador ++;
   
-    if(contador == numeroMaximoDeIntentos + 1){
+    if(contador == numeroMaximoDeIntentos + 1){      
       break
     }
 }
